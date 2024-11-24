@@ -8,13 +8,13 @@ export class CardDataService {
 
   private cards = [
     {
-      id: 'lore-ipsum',
-      title: 'Événement Spécial Lore Ipsum',
-      description: 'Un événement fictif pour démonstration avec des informations Lorem Ipsum.',
-      imageUrl: 'https://scontent-cdg4-3.xx.fbcdn.net/v/t39.30808-6/466623632_122182456790220999_2194432795699181305_n.jpg?stp=dst-jpg_p526x395&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=njC4AiakIHMQ7kNvgGVbO7r&_nc_zt=23&_nc_ht=scontent-cdg4-3.xx&_nc_gid=AvICecF9tf7hN5H2Vir3XY_&oh=00_AYAuYZd3rnWYS5mvLEI_98D6Qv329bbUp9Re9eu3MPuZJA&oe=6749458B',
-      link: '/article/lore-ipsum', // Lien valide vers la page de l'article
-      pages: ['home', 'evenements'],
-      category: 'Événements'  // Ajout de la catégorie
+      id: 'parcours-passion-tranhaleux',
+      title: 'Parcours de pêche label passion',
+      description: 'Découvrez le parcours international de pêche au coup de la Vilaine à Tranhaleux, récemment labellisé Parcours Passion.',
+      imageUrl: 'https://scontent-cdg4-3.xx.fbcdn.net/v/t39.30808-6/466623632_122182456790220999_2194432795699181305_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=njC4AiakIHMQ7kNvgGVbO7r&_nc_zt=23&_nc_ht=scontent-cdg4-3.xx&_nc_gid=ANFrUJcqX7cqaaJJumI4u0Y&oh=00_AYBXplR0ByEHmBnpiSg7_RcNJbA_7Ly9T-xaEY9LSdp1Kw&oe=67497DCB',
+      link: '/article/parcours-passion-tranhaleux',
+      pages: ['home', 'actualites'],
+      category: 'Info'
     },
     {
       id: 'open-carnassiers',

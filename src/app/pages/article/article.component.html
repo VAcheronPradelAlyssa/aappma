@@ -1,18 +1,20 @@
+
 <div class="container mt-5">
-    <!-- Bouton de retour -->
-    <button class="btn btn-secondary mb-3" (click)="goBack()">Retour</button>
-  
-    <div *ngIf="article; else notFound">
-      <h1>{{ article.title }}</h1>
-      <img [src]="article.imageUrl" alt="{{ article.title }}" class="img-fluid mb-3">
-      <div class="article-content" [innerHTML]="article?.content"></div>
-    </div>
-  
-    <ng-template #notFound>
-      <div class="alert alert-danger">
-        <h4>Article introuvable</h4>
-        <p>Nous n'avons pas pu trouver cet article. Veuillez vérifier l'URL ou revenir à la page précédente.</p>
-      </div>
-    </ng-template>
-  </div>
-  
+  <button (click)="goBack()" class="btn btn-secondary mt-4">Retour</button>
+
+  <!-- Affichage du titre de l'article -->
+  <h1>{{ article?.title }}</h1>
+
+  <!-- Affichage de l'image associée à l'article -->
+  <img [src]="article?.imageUrl" alt="{{ article?.title }}" class="img-fluid mb-3">
+
+  <!-- Affichage du contenu de l'article (texte, HTML) -->
+  <div [innerHTML]="article?.content"></div>
+
+  <!-- Affichage du Post Facebook dans un iframe (si disponible) -->
+  <h3 *ngIf="iframeSrc">Post Facebook :</h3>
+  <iframe *ngIf="iframeSrc" [src]="iframeSrc" width="500" height="793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+  <!-- Bouton pour revenir à la page précédente -->
+  <button (click)="goBack()" class="btn btn-secondary mt-4">Retour</button>
+</div>
