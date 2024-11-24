@@ -1,0 +1,46 @@
+.custom-navbar {
+    background-color: #f8f9fa; /* Couleur de fond grise claire */
+    color: #000000; /* Couleur du texte en noir */
+    border-bottom: 2px solid #0daa76; /* Ajoute une bordure verte pour séparer la navbar du reste */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #000000; /* Couleur des liens */
+    font-size: 1.1rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #0daa76; /* Couleur verte sur le survol */
+}
+
+.navbar-toggler-icon {
+    border: 1px solid #000; /* Bordure noire pour le bouton */
+    border-radius: 10px;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+    margin-right: 2%;
+}
+
+.navbar-nav {
+    margin-left: 10px;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+}
+.nav-link {
+    cursor: pointer;  /* Pour s'assurer que le lien est cliquable */
+    text-decoration: none;  /* Pour enlever la ligne sous le lien (si nécessaire) */
+  }
+  
+  .nav-link.active {
+    color: green;  /* Couleur verte pour le lien actif */
+  }
+  

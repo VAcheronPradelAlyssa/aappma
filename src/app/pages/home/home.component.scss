@@ -1,0 +1,16 @@
+@import '../../../styles/shared.scss';
+
+
+.img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* L'image couvrira toute la zone sans déformation */
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .btn-actu{ 
+    border-color: #0daa76;
+    color: #0daa76;
+   }

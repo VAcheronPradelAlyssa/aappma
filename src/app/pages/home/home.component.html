@@ -1,0 +1,67 @@
+<div>
+    <img [src]="cheminImage"alt="Image responsive" class="img-fluid">/>  
+</div>
+  
+<div class="container mt-5 content">
+    <div class="card rounded p-4">
+        <h1 class="card-title">Bienvenue sur le site de l'Aappma Brochet de Basse Vilaine</h1>
+        <div class="card-body">
+            <p class="card-text">Une association passionnée par la pêche et la préservation de nos rivières. Notre mission est de promouvoir la pêche responsable, le respect de l'environnement aquatique, et de créer une communauté dédiée aux amateurs de pêche. </p>
+            <p>Explorez notre galerie pour découvrir des moments capturés au fil de nos aventures au bord de la Basse Vilaine. Restez informé sur nos événements à venir et rejoignez-nous pour partager votre passion et participer à des activités communautaires. </p>
+            <p>Que vous soyez un pêcheur chevronné ou que vous découvriez cette passion, l'Aappma Brochet de Basse Vilaine est l'endroit idéal pour se connecter avec d'autres amateurs de pêche, échanger des conseils, et contribuer à la préservation de nos précieux écosystèmes aquatiques. </p>
+            <p>Rejoignez-nous dans cette aventure aquatique et découvrez le monde de la pêche comme jamais auparavant ! </p>
+        </div>
+    </div>
+<br>
+    <section class="categories">
+        <h2>Articles à Lire</h2>
+  
+        <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-4" *ngFor="let card of cards">
+                <app-card 
+                  [imageUrl]="card.imageUrl"
+                  [title]="card.title"
+                  [description]="card.description"
+                  [link]="card.link">
+                </app-card>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+    </section>
+
+    <div class="container mt-5 content">
+        <div>
+            <a routerLink="/actualites" class="btn btn-actu">Voir nos Dernières Actualités</a>
+        </div>
+    </div>
+    <br>
+
+    <section class="categories">
+        <h2>Où Pêcher?</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/468399953_3957272664555429_5836666668566272096_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=b949MgtI1_UQ7kNvgEEdTZx&_nc_zt=23&_nc_ht=scontent-cdg4-2.xx&_nc_gid=AmBL9uEuNQO_wLry3yayKqf&oh=00_AYBto7rg6ROQxDuIjC9-LD-OgQLOx8HnmajmBdDTZnjKfw&oe=674966BE" class="card-img-top" alt="Etang du Rodoir">
+                    <div class="card-body">
+                        <h5 class="card-title">Etang du Rodoir</h5>
+                        <a href="https://www.google.com/maps/dir/Current+Location/47.512396,-2.284623" class="btn btn-primary">Voir la localisation</a>
+                    </div>
+                </div>
+            </div>
+       
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/468309580_3957272637888765_7564717449241318091_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AoLG-AYHTW8Q7kNvgHaF8aG&_nc_zt=23&_nc_ht=scontent-cdg4-2.xx&_nc_gid=AMTKmDFlxPcG1oZBYB2Ge6s&oh=00_AYCaC_UjX40xuBB4Ypb9uhhqfHDw7qEeWIVdlCS7p2ixqg&oe=67496A7E" class="card-img-top" alt="Localisation 2">
+                <div class="card-body">
+                    <h5 class="card-title">La Vilaine Rieux-Aucfer</h5>
+                    <a href="https://www.google.com/maps/dir/Current+Location/47.613965,-2.084848" class="btn btn-primary stretched-link">Voir la localisation</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</div>

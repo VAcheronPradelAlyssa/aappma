@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <!-- Bouton de retour -->
+    <button class="btn btn-secondary mb-3" (click)="goBack()">Retour</button>
+  
+    <div *ngIf="article; else notFound">
+      <h1>{{ article.title }}</h1>
+      <img [src]="article.imageUrl" alt="{{ article.title }}" class="img-fluid mb-3">
+      <div class="article-content" [innerHTML]="article?.content"></div>
+    </div>
+  
+    <ng-template #notFound>
+      <div class="alert alert-danger">
+        <h4>Article introuvable</h4>
+        <p>Nous n'avons pas pu trouver cet article. Veuillez vérifier l'URL ou revenir à la page précédente.</p>
+      </div>
+    </ng-template>
+  </div>
+  

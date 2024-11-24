@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;  /* Assure que body occupe toute la hauteur de la fenêtre */
+    margin: 0;     /* Supprime les marges par défaut */
+    position: relative;  /* Définit une position relative pour que le footer se place par rapport à body */
+  }
+  
+  .main-content {
+    padding-bottom: 60px;  /* Ajoute de l'espace en bas pour que le contenu ne soit pas caché par le footer */
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;  /* Fixe le footer au bas de la fenêtre */
+    width: 100%;  /* Le footer prend toute la largeur */
+    background-color: #333;  /* Fond du footer */
+    color: white;  /* Texte blanc */
+    text-align: center;
+    padding: 1rem;  /* Espacement interne */
+  }
+  
+
+.content {
+    flex: 1;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: #0daa76;
+    border-color: #0daa76;
+    color: white;
+}
+
+.vert {
+    color: #0daa76;
+    border-color: #0daa76;
+    font-size: larger;
+}
+.btn-actu {
+    border-color: #0daa76;
+    }
