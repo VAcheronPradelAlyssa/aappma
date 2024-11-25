@@ -12,12 +12,14 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./evenements.component.scss']
 })
 export class EvenementsComponent implements OnInit {
-  cards: { imageUrl: string; title: string; description: string; link: string; }[] = []; // Typage explicite
-
+  upcomingEvents: { imageUrl: string; title: string; description: string; link: string; }[] = [];
+  pastEvents: { imageUrl: string; title: string; description: string; link: string; }[] = [];
 
   constructor(private cardDataService: CardDataService) {}
 
   ngOnInit() {
-    this.cards = this.cardDataService.getCardsForPage('evenements'); // Récupère les cartes spécifiques à Home
+    // Récupère les événements à venir et passés
+    this.upcomingEvents = this.cardDataService.getUpcomingEvents();
+    this.pastEvents = this.cardDataService.getPastEvents();
   }
 }
