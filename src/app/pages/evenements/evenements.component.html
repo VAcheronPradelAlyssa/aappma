@@ -1,13 +1,24 @@
-<div class="container mt-5 page-wrap" >
-    <div class="row">
-      <div class="col-md-4" *ngFor="let card of cards">
-        <app-card 
-          [imageUrl]="card.imageUrl"
-          [title]="card.title"
-          [description]="card.description"
-          [link]="card.link">
-        </app-card>
+<h1>Les Événements</h1>
+<div class="image-container">
+
+<img src="https://scontent-cdg4-1.xx.fbcdn.net/v/t39.30808-6/468400569_3957270981222264_6339245690659978007_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=GqijXnOLse8Q7kNvgGnexwe&_nc_zt=23&_nc_ht=scontent-cdg4-1.xx&_nc_gid=AKgHRpRwO0--ZOB8S5d8gPc&oh=00_AYBrHeEoJovDREoQriYL7qNRWuGaCnbZftr130rumovF1g&oe=6749A93C" class="img-fluid" alt="Stop au pillage de la Vilaine">
+</div>
+
+<div class="container mt-5">
+  <!-- Sélection de catégorie -->
+
+ 
+  <!-- Affichage des cartes filtrées -->
+  <div class="row">
+    <div class="col-md-4" *ngFor="let card of cards">
+      <div class="card">
+        <img [src]="card.imageUrl" class="card-img-top" alt="{{ card.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ card.title }}</h5>
+          <p class="card-text">{{ card.description }}</p>
+          <a [routerLink]="[card.link]" class="btn btn-primary">Lire l'article</a>
+        </div>
       </div>
     </div>
   </div>
-  
+</div>

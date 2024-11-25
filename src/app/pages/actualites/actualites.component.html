@@ -1,3 +1,7 @@
+<h1>Les Actualités</h1>
+<div class="image-container">
+<img src="https://scontent-cdg4-1.xx.fbcdn.net/v/t39.30808-6/468035963_3957271397888889_8659584763441598074_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=k7bnTj8pg3AQ7kNvgEzw16P&_nc_zt=23&_nc_ht=scontent-cdg4-1.xx&_nc_gid=AB5tVu9A8gzj8O8LKZcjLJs&oh=00_AYBWkibQWaLYJKqiWf1uMtbtvB5T_gvXJrBmK4vBBSHn0w&oe=67498B31" class="img-fluid" alt="Stop au pillage de la Vilaine">
+</div>
 <div class="container mt-5">
   <!-- Sélection de catégorie -->
   <div class="mb-3">
@@ -6,7 +10,8 @@
       <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
     </select>
   </div>
-
+ 
+ <br>
   <!-- Affichage des cartes filtrées -->
   <div class="row">
     <div class="col-md-4" *ngFor="let card of cards">

@@ -1,0 +1,43 @@
+
+body {
+    padding-bottom: 50px; /* Ajuste cette valeur selon la hauteur de ton footer */
+  }
+  
+  .main-content {
+    padding-bottom: 60px;  /* Ajoute de l'espace en bas pour que le contenu ne soit pas caché par le footer */
+  }
+  
+
+
+.content {
+    flex: 1;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: #0daa76;
+    border-color: #0daa76;
+    color: white;
+}
+
+.vert {
+    color: #0daa76;
+    border-color: #0daa76;
+    font-size: larger;
+}
+.btn-actu {
+    border-color: #0daa76;
+    }

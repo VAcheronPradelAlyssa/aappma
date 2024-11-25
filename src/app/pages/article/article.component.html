@@ -6,7 +6,7 @@
   <h1>{{ article?.title }}</h1>
 
   <!-- Affichage de l'image associée à l'article -->
-  <img [src]="article?.imageUrl" alt="{{ article?.title }}" class="img-fluid mb-3">
+  <img *ngIf="article?.imageUrl" [src]="article?.imageUrl" alt="{{ article?.title }}" class="img-fluid mb-3" >
 
   <!-- Affichage du contenu de l'article (texte, HTML) -->
   <div [innerHTML]="article?.content"></div>
@@ -16,5 +16,4 @@
   <iframe *ngIf="iframeSrc" [src]="iframeSrc" width="500" height="793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
   <!-- Bouton pour revenir à la page précédente -->
-  <button (click)="goBack()" class="btn btn-secondary mt-4">Retour</button>
 </div>

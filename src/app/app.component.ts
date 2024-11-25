@@ -3,10 +3,13 @@ import { RouterOutlet } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from "./shared/footer/footer.component";
+import { GalleryComponent } from './gallery/gallery.component';
+import { ImageModalComponent } from './image-modal/image-modal.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterModule, NavbarComponent, FooterComponent], // Ajoute RouterModule et NavbarComponent
+  imports: [RouterModule, NavbarComponent, FooterComponent,  GalleryComponent, ImageModalComponent], // Ajoute RouterModule et NavbarComponent
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
