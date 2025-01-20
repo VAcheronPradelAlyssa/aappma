@@ -2,4 +2,8 @@
     background-color: #0daa76;
     border-color: #0daa76;
     color: white;
-}
+}.nav-link {
+    cursor: pointer;  /* Pour s'assurer que le lien est cliquable */
+    text-decoration: none;  /* Pour enlever la ligne sous le lien (si nécessaire) */
+  }
+  

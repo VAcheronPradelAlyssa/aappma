@@ -10,19 +10,18 @@ export class ArticleDataService {
     {
       id: 'parcours-passion-tranhaleux',
       title: 'Parcours de pêche label passion - La Vilaine à Tranhaleux',
-      imageUrl: 'assets/images/evenement/final.jpg',
+      imageUrl: '/assets/images/parcourslabel.jpg',
       content: `
         <p>Le parcours international de pêche au coup de la Vilaine à Tranhaleux sur la commune de Rieux a été labellisé Parcours Passion par la Fédération Nationale de la Pêche en France FNPF 🥳😃</p>
         <p>🚙 Ce parcours de presque 4 kilomètres de long est très accessible depuis la D114, entre Rieux et le pont de Cran. Un chemin en rive gauche est praticable en voiture sur l'ensemble du linéaire ! Ce qui facilite l'installation d'un pêcheur n'importe où sur le parcours 👌</p>
         <p>Bravo à la Fédération de Pêche du Morbihan et l'Aappma Brochet de Basse Vilaine pour ce magnifique parcours ! 👏</p>
-        <p>#pecheaucoup #lavilaine #régionbretagne #canauxdebretagne #pecheauleurre #bretagneterredepêche</p>
       `,
       facebookLink: 'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0kGMEziD3Nmu3pEMgeHzJXVArSeTLUtBzqeytxLGSdJUcTNzPbnVtzTniy8ekGUQ2l%26id%3D61556629982632&show_text=true&width=500'
     },
     {
       id: 'open-carnassiers',
       title: 'Open Carnassiers 29 Juin 2024',
-      imageUrl: 'https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/449389153_483835154305597_5314908254267716046_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=VBiWgTzu9acQ7kNvgEbtVbb&_nc_zt=23&_nc_ht=scontent-cdg4-2.xx&_nc_gid=ApoI8Pm-n-Mi1GdOwEouF9M&oh=00_AYDcJVfFvoW1Dz6rFewO-fNoxW4oschqLqE4mFmGYt4AWw&oe=674979F7',
+      imageUrl: '/assets/images/finalopen2024.jpg',
       content: ` <p>Waouhh ! Quelle première édition de l'open carnassier vilaine en partenariat avec La Clef des Champs - Saison de pêche, Hearty Rise et  flashmer que nous remercions pour la très belle dotation.
                 </p>
         <p>C'est une occasion pour nous de vous annoncer la signature d'une expérimentation avec la ddtm 56 concernant l'arrêt de la pêche professionnelle entre Rieux et le pont de Cran, sur le parcours de Tranhalleux. C'est une victoire pour la Biodiversité ! Merci pour le travail mené en collaboration avec l'adapaef 56, le collectif de pêcheurs en colère, la Fédération de Pêche du Morbihan et nos élus locaux très impliqués sur le dossier.</p>
@@ -65,7 +64,7 @@ facebookLink: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.
     {
       id:'enduro-carpe-2024',
       title:'Enduro Carpe Septembre 2024',
-      imageUrl:'https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/459127287_531553746200404_6780869274830948396_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=PUbqd0DawUUQ7kNvgFJgk_f&_nc_zt=23&_nc_ht=scontent-cdg4-2.xx&_nc_gid=AoXboxN2GsXStyv_hqIb0vE&oh=00_AYB_99DKoaah_hgTRzn5zrKlo5bi8sg_A9SicaWKEQ1rsQ&oe=674999AC',
+      imageUrl:'/assets/images/finalenduro2024.jpg',
       content : 
       `
       <p>Clap de fin!</p>
@@ -84,7 +83,7 @@ Un grand merci à tous!</p>
     {
       id:'rhb-2024',
       title:'Rencontres Halieutiques Bretonnes 2024',
-      imageUrl:'https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/468077942_3957373854545310_4527266139931081021_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ouf74vcvRVwQ7kNvgEn47MI&_nc_zt=23&_nc_ht=scontent-cdg4-2.xx&_nc_gid=AcPNvbAoyurutUCBXBilEro&oh=00_AYCXufOz_Tb-8my8D0boxJD0JM9v69e3E54wkJWQPj89-g&oe=674997AE',
+      imageUrl:'/assets/images/rhb2024.jpg',
       content:
       `
       <p>C'est toujours un plaisir de recevoir, sur notre territoire de gestion, cette compétition conviviale.</p>
@@ -96,7 +95,7 @@ Un grand merci à tous!</p>
     {
       id:'ag-2024',
       title:'Assemblée Générame - Retour sur l\'événement du 4 févirier 2024',
-      imageUrl:'https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/468191010_3957268961222466_1212788754689115904_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=tak_IXTch_IQ7kNvgFMC44I&_nc_zt=23&_nc_ht=scontent-cdg4-2.xx&_nc_gid=AeHSjNlQRmPl0HA3WTtJwm4&oh=00_AYDYa73TN96BwX02UHcxJGjBirWBDoSOkdPumuBmCYK6qw&oe=67499F2C',
+      imageUrl:'/assets/images/ag.jpg',
       content: `
       <p>Ce dimanche 4 février, s'est déroulé notre assemblée générale.</p>
       <p>Nous remercions une nouvelle fois la présence de près de 90 adhérents ainsi que la participation de la <a href="https://www.facebook.com/federationpechemorbihan">Fédération de Pêche du Morbihan</a>Fédération de Pêche du Morbihan représentée par son Président Pierrick Courjal.
@@ -122,6 +121,18 @@ Un grand merci à tous!</p>
 
             <p>Vous avez été nombreux à souhaiter participer à des entretiens de berges. Nous allons y travailler rapidement et poser des dates avant les différentes ouvertures. Merci pour ce moment de partage convivial nécessaire pour que votre Aappma puisse continuer à travailler sereinement.</p>
       `
+    },
+    {
+      id:'festival-national',
+      title:'1er Festival National de la Pêche 23 au 25 mai 2025',
+      imageUrl:"/assets/images/festival2025.jpg",
+      content:`<p>🟢 Le GIFAP annonce un « Festival National de la Pêche » en mai 2025 !</p>
+      <p>→ Après plusieurs mois de travail en Commission GIFAP, toutes les marques partenaires ont validé leur participation :
+      Delalande, Daiwa, Fun Fishing, Fiiish, Flashmer, Lemer, Rapala VMC, Sensas, Illex, Sert Garbolino, Shimano, Ultimate Fishing, Cap River, Flashmer, Mepps, Pafex, Powerline, Pure Fishing, Mitchel, Berkley, Inedis Territoires nature, Pacific pêche, Rive, Pecheur.com, Info pêche, Fish Friender, La Pêche et les Poissons… et la FNPF 👍</p>
+      <p>🎣 Toutes techniques, avec animations, démonstrations, essais de matériel, du bord ou embarqué, espaces d’animation en bassin… face au grand Hall.
+      Sur plusieurs niveaux, plateau TV, deux salles de conférence simultanées, bassins de démo, espace « longues cannes », une "nocturne festive", espace jeunes, influenceurs, moniteur-guides, nautisme… sur 3 jours d’expo ! 👏
+      Parc Exponantes du 23 au 25 mai 2025 </p>
+      <a href="https://www.gifap.fr/le-gifap-annonce-un-festival.../">Informations</a>`
     }
   ];
 

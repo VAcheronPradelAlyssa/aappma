@@ -1,1 +1,33 @@
-<p>gallery works!</p>
+<h1>Galerie</h1>
+
+<!-- Sélection de catégorie -->
+<div class="mb-3">
+  <label for="Categorie">Sélectionnez une catégorie :</label>
+  <select id="Categorie" class="form-control" [(ngModel)]="selectedCategory" (change)="filterImages()">
+    <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+  </select>
+</div>
+
+<!-- Affichage des images regroupées par catégorie -->
+<div *ngFor="let category of getKeys(groupedImages)">
+  <h2>{{ category }}</h2>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let image of groupedImages[category]">
+      <div class="card" (click)="openImage(image.url)">
+        <img [src]="image.url" class="card-img-top limited-height" [alt]="image.category">
+        <div class="card-body">
+          <h5 class="card-title">{{ image.category }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modale pour l'image agrandie -->
+<div class="modal" *ngIf="selectedImage" (click)="closeImage()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="close" (click)="closeImage()">×</span>
+    <!-- Clic sur l'image pour la fermer -->
+    <img [src]="selectedImage" alt="Agrandissement" class="img-fluid" (click)="closeImage()">
+  </div>
+</div>

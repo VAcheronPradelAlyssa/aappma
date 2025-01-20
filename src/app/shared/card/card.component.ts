@@ -14,4 +14,5 @@ export class CardComponent {
   @Input() imageUrl!: string;
   @Input() link!: string;
   @Input() facebookPost!: string; // Ajout du champ pour le post Facebook
+
 }

@@ -1,41 +1,83 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-gallery',
-  templateUrl: './gallery.component.html',
   standalone: true,
-  styleUrls: ['./gallery.component.scss']
+  imports: [CommonModule, FormsModule], // Importation correcte des modules nécessaires
+  templateUrl: './gallery.component.html',
+  styleUrls: ['./gallery.component.scss'],
 })
 export class GalleryComponent implements OnInit {
-  // Exemple de données d'images, cela peut venir d'un service
-  categories = [
-    {
-      name: 'Carpes',
-      images: [
-        { src: 'assets/images/carpes/carpe1.jpg', alt: 'Carpe 1' },
-        { src: 'assets/images/carpes/carpe2.jpg', alt: 'Carpe 2' },
-        { src: 'assets/images/carpes/carpe3.jpg', alt: 'Carpe 3' }
-      ]
-    },
-    {
-      name: 'Silures',
-      images: [
-        { src: 'assets/images/silures/silure1.jpg', alt: 'Silure 1' },
-        { src: 'assets/images/silures/silure2.jpg', alt: 'Silure 2' }
-      ]
-    },
-    // Ajouter d'autres catégories ici
+  categories = ['Tous les poissons', 'Brochets', 'Carpes', 'Silures', 'Autres'];
+  selectedCategory = 'Tous les poissons';
+  images = [
+    { url: '/assets/images/brochets/brochet.jpg', category: 'Brochets' },
+    { url: '/assets/images/carpes/antoine.jpg', category: 'Carpes' },
+    { url: '/assets/images/carpes/carpe2.jpg', category: 'Carpes' },
+    { url: '/assets/images/carpes/carpe3.jpg', category: 'Carpes' },
+    { url: '/assets/images/carpes/carpeendu.jpg', category: 'Carpes' },
+    { url: '/assets/images/silures/silure.jpg', category: 'Silures' },
+    { url: '/assets/images/silures/silure2.jpg', category: 'Silures' },
+    { url: '/assets/images/autres1.jpg', category: 'Autres' },
   ];
 
-  selectedCategory: string = 'all'; // Valeur par défaut pour afficher toutes les espèces
+  filteredImages = [...this.images]; // Liste des images filtrées en fonction de la catégorie sélectionnée
+  groupedImages: { [key: string]: { url: string; category: string }[] } = {};
 
-  constructor() { }
+  selectedImage: string | null = null; // Image sélectionnée pour affichage agrandi
 
   ngOnInit(): void {
+    this.filterImages(); // Initialisation des images filtrées et groupées
   }
 
-  // Filtrer les images en fonction de la catégorie sélectionnée
-  filterImages(category: string) {
-    this.selectedCategory = category;
+  /**
+   * Filtre les images en fonction de la catégorie sélectionnée
+   */
+  filterImages(): void {
+    if (this.selectedCategory === 'Tous les poissons') {
+      this.filteredImages = [...this.images];
+    } else {
+      this.filteredImages = this.images.filter(
+        (image) => image.category === this.selectedCategory
+      );
+    }
+    this.groupImagesByCategory(); // Met à jour les groupes après filtrage
+  }
+
+  /**
+   * Groupe les images par catégorie pour un affichage organisé
+   */
+  groupImagesByCategory(): void {
+    this.groupedImages = this.filteredImages.reduce((groups, image) => {
+      const category = image.category;
+      if (!groups[category]) {
+        groups[category] = [];
+      }
+      groups[category].push(image);
+      return groups;
+    }, {} as { [key: string]: { url: string; category: string }[] });
+  }
+
+  /**
+   * Récupère les clés des groupes d'images
+   */
+  getKeys(object: { [key: string]: any }): string[] {
+    return Object.keys(object);
+  }
+
+  /**
+   * Ouvre une image en plein écran
+   */
+  openImage(imageUrl: string): void {
+    this.selectedImage = imageUrl;
+  }
+
+  /**
+   * Ferme l'image affichée en plein écran
+   */
+  closeImage(): void {
+    this.selectedImage = null;
   }
 }

@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./actualites.component.scss']
 })
 export class ActualitesComponent implements OnInit {
+  stop : string = '/assets/images/stop.jpg';
   cards: { imageUrl: string; title: string; description: string; link: string; }[] = []; // Typage explicite
   categories: string[] = ['Tous', 'Concours', 'Événements', 'Animations', 'Info']; // Catégories disponibles
   selectedCategory: string = 'Tous';  // Catégorie sélectionnée

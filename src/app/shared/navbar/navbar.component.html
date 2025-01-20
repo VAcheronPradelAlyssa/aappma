@@ -1,45 +1,38 @@
 <nav class="navbar navbar-expand-lg custom-navbar">
-    <div class="container-fluid">
-      <!-- Logo -->
-      <img src="https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/441170539_455448710477575_8716856591811522086_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=S_cbpkwvvMEQ7kNvgFQFOXn&_nc_zt=23&_nc_ht=scontent-cdg4-2.xx&_nc_gid=APWXsaO0vDR3sm_Ev2xEqqB&oh=00_AYAp-aYTOzxdm-7KKmAyqM1ajBJq47IrLml0KVto-tG5ew&oe=67493A1E" alt="Logo" class="logo-img">
-  
-      <!-- Accueil -->
-      <a class="navbar-brand" routerLink="/">Accueil</a>
-  
-      <!-- Bouton pour Menu -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-      </button>
-  
-      <!-- Menu de navigation -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/photo">Galerie</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/evenements">Événements</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/actualites">Actualités</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://morbihan.federationpeche.fr">Fédération</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.cartedepeche.fr/">Carte de Pêche</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/reglementation">Réglementations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/carte">Où Pêcher?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/cg">Membre du Conseil</a>
-          </li>
-        </ul>
-      </div>
+  <div class="container-fluid">
+    <!-- Logo avec binding -->
+    <img [src]="cheminImage" alt="Logo" class="logo-img" />
+
+    <!-- Accueil -->
+    <a class="navbar-brand" routerLink="/">Accueil</a>
+
+    <!-- Bouton pour Menu -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+    </button>
+
+    <!-- Menu de navigation -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/gallery">Photos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/evenements">Événements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/actualites">Actualités</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://morbihan.federationpeche.fr">Fédération</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.cartedepeche.fr/">Carte de Pêche</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/membres-conseil">Membres du Conseil</a>
+        </li>
+      </ul>
     </div>
-  </nav>
-  
+  </div>
+</nav>
