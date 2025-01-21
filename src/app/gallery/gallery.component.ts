@@ -12,19 +12,20 @@ import { CommonModule } from '@angular/common';
 export class GalleryComponent implements OnInit {
   categories = ['Tous les poissons', 'Brochets', 'Carpes', 'Silures', 'Autres'];
   selectedCategory = 'Tous les poissons';
+
   images = [
-    { url: '/assets/images/brochets/brochet.jpg', category: 'Brochets' },
-    { url: '/assets/images/carpes/antoine.jpg', category: 'Carpes' },
-    { url: '/assets/images/carpes/carpe2.jpg', category: 'Carpes' },
-    { url: '/assets/images/carpes/carpe3.jpg', category: 'Carpes' },
-    { url: '/assets/images/carpes/carpeendu.jpg', category: 'Carpes' },
-    { url: '/assets/images/silures/silure.jpg', category: 'Silures' },
-    { url: '/assets/images/silures/silure2.jpg', category: 'Silures' },
-    { url: '/assets/images/autres1.jpg', category: 'Autres' },
+    { url: '/assets/images/brochets/brochet.jpg', category: 'Brochets', title: 'Brochet pêché à Nantes le 12 juin' },
+    { url: '/assets/images/carpes/antoine.jpg', category: 'Carpes', title: 'Carpe pêchée le 10 janvier à Redon' },
+    { url: '/assets/images/carpes/carpe2.jpg', category: 'Carpes', title: '' }, // Pas de titre
+    { url: '/assets/images/carpes/carpe3.jpg', category: 'Carpes', title: 'Belle carpe au lever du soleil' },
+    { url: '/assets/images/carpes/carpeendu.jpg', category: 'Carpes', title: '' }, // Pas de titre
+    { url: '/assets/images/silures/silure.jpg', category: 'Silures', title: 'Silure géant capturé en rivière' },
+    { url: '/assets/images/silures/silure2.jpg', category: 'Silures', title: '' }, // Pas de titre
+    { url: '/assets/images/autres1.jpg', category: 'Autres', title: 'Un autre poisson impressionnant' },
   ];
 
   filteredImages = [...this.images]; // Liste des images filtrées en fonction de la catégorie sélectionnée
-  groupedImages: { [key: string]: { url: string; category: string }[] } = {};
+  groupedImages: { [key: string]: { url: string; category: string; title: string }[] } = {};
 
   selectedImage: string | null = null; // Image sélectionnée pour affichage agrandi
 
@@ -32,9 +33,6 @@ export class GalleryComponent implements OnInit {
     this.filterImages(); // Initialisation des images filtrées et groupées
   }
 
-  /**
-   * Filtre les images en fonction de la catégorie sélectionnée
-   */
   filterImages(): void {
     if (this.selectedCategory === 'Tous les poissons') {
       this.filteredImages = [...this.images];
@@ -46,9 +44,6 @@ export class GalleryComponent implements OnInit {
     this.groupImagesByCategory(); // Met à jour les groupes après filtrage
   }
 
-  /**
-   * Groupe les images par catégorie pour un affichage organisé
-   */
   groupImagesByCategory(): void {
     this.groupedImages = this.filteredImages.reduce((groups, image) => {
       const category = image.category;
@@ -57,26 +52,17 @@ export class GalleryComponent implements OnInit {
       }
       groups[category].push(image);
       return groups;
-    }, {} as { [key: string]: { url: string; category: string }[] });
+    }, {} as { [key: string]: { url: string; category: string; title: string }[] });
   }
 
-  /**
-   * Récupère les clés des groupes d'images
-   */
   getKeys(object: { [key: string]: any }): string[] {
     return Object.keys(object);
   }
 
-  /**
-   * Ouvre une image en plein écran
-   */
   openImage(imageUrl: string): void {
     this.selectedImage = imageUrl;
   }
 
-  /**
-   * Ferme l'image affichée en plein écran
-   */
   closeImage(): void {
     this.selectedImage = null;
   }

@@ -22,11 +22,30 @@
   left: 0;
 }
 
-.card {
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+/* Ajout d'espaces entre les colonnes */
+.row {
+  gap: 20px; /* Ajoute de l'espace entre les colonnes */
+  margin-left: 0;
+  margin-right: 0;
 }
+
+/* Espaces entre les photos */
+.card {
+  margin-bottom: 20px; /* Ajoute un espace entre les photos verticalement */
+}
+
+/* Marges sur les côtés de la page */
+.container {
+  padding-left: 30px; /* Ajoute de l'espace à gauche */
+  padding-right: 30px; /* Ajoute de l'espace à droite */
+}
+
+/* Si la classe "container" est déjà utilisée, ajoutez simplement plus de padding */
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 
 .card:hover {
   transform: scale(1.05);
