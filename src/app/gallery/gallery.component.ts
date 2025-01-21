@@ -10,11 +10,12 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./gallery.component.scss'],
 })
 export class GalleryComponent implements OnInit {
-  categories = ['Tous les poissons', 'Brochets', 'Carpes', 'Silures','Perches','Sandres', 'Autres'];
+  categories = ['Tous les poissons', 'Brochets', 'Carpes', 'Silures','Perches','Sandres','Mulets', 'Autres'];
   selectedCategory = 'Tous les poissons';
 
   images = [
     { url: '/assets/images/brochets/brochet.jpg', category: 'Brochets', title: '' },
+    { url: '/assets/images/brochets/open20241.jpg', category: 'Brochets', title: 'Open Carnassiers 2024' },
     { url: '/assets/images/carpes/antoine.jpg', category: 'Carpes', title: 'Etang du Rodoir' },
     { url: '/assets/images/carpes/carpe2.jpg', category: 'Carpes', title: '' }, 
     { url: '/assets/images/carpes/carpe3.jpg', category: 'Carpes', title: 'Enduro 2023' },
@@ -51,6 +52,10 @@ export class GalleryComponent implements OnInit {
     { url: '/assets/images/sandres/sandre13.jpg', category: 'Sandres', title: '' },
     { url: '/assets/images/sandres/sandre14.jpg', category: 'Sandres', title: '' },
     { url: '/assets/images/sandres/sandres.jpg', category: 'Sandres', title: '' },
+    { url: '/assets/images/sandres/open2024.jpg', category: 'Sandres', title: 'Open Carnassiers 2024' },
+    { url: '/assets/images/sandres/open20242.jpg', category: 'Sandres', title: 'Open Carnassiers 2024' },
+    { url: '/assets/images/sandres/open20243.jpg', category: 'Sandres', title: 'Open Carnassiers 2024' },
+    { url: '/assets/images/mulets/mulet.jpg', category: 'Mulets', title: '' },
     { url: '/assets/images/silures/silure.jpg', category: 'Silures', title: '' },
     { url: '/assets/images/silures/silure2.jpg', category: 'Silures', title: '' },
     { url: '/assets/images/canard.jpg', category: 'Autres', title: '🦆🦆🦆' }
