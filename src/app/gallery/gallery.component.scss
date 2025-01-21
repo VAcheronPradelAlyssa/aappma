@@ -22,28 +22,10 @@
   left: 0;
 }
 
-/* Ajout d'espaces entre les colonnes */
-.row {
-  gap: 20px; /* Ajoute de l'espace entre les colonnes */
-  margin-left: 0;
-  margin-right: 0;
-}
 
 /* Espaces entre les photos */
 .card {
   margin-bottom: 20px; /* Ajoute un espace entre les photos verticalement */
-}
-
-/* Marges sur les côtés de la page */
-.container {
-  padding-left: 30px; /* Ajoute de l'espace à gauche */
-  padding-right: 30px; /* Ajoute de l'espace à droite */
-}
-
-/* Si la classe "container" est déjà utilisée, ajoutez simplement plus de padding */
-body {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 
@@ -86,7 +68,7 @@ h2 {
 
 .modal-content {
   background: white;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   position: relative;
   max-width: 90%; /* Limite la largeur à 90% de l'écran */
