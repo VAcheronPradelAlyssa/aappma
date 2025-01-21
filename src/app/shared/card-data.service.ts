@@ -9,6 +9,16 @@ export class CardDataService {
 
   private cards = [
     {
+      id:'ag2025',
+      title:'Assemblée Générale 2 Février 2025',
+      description:'L\'Assemblée Générale a lieu le 2 février 2025 à 9h30 à Saint Dolay',
+      imageUrl:'assets/images/ag2025coupe.jpg',
+      link:'/article/ag2025',
+      date:'2025-02-02',
+      pages:['actualites','evenements','home'],
+      category:'Info'
+      },
+    {
       id: 'parcours-passion-tranhaleux',
       title: 'Parcours de pêche label passion',
       description: 'Découvrez le parcours international de pêche au coup de la Vilaine à Tranhaleux, récemment labellisé Parcours Passion.',
@@ -23,7 +33,7 @@ export class CardDataService {
       description: 'Waouhh ! Quelle première édition de l\'open carnassier Vilaine',
       imageUrl: 'assets/images/finalopen2024.jpg',
       link: '/article/open-carnassiers',
-      pages: ['evenements','home', 'actualites'],
+      pages: ['evenements', 'actualites'],
       date:'2024-06-29',
       category: 'Événements'  // Ajout de la catégorie
     },
@@ -78,6 +88,7 @@ export class CardDataService {
     pages:['actualites','evenements'],
     category:'Animations'
     }
+     
    
   ];
 

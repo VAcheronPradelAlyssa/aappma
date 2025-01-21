@@ -133,7 +133,16 @@ Un grand merci à tous!</p>
       Sur plusieurs niveaux, plateau TV, deux salles de conférence simultanées, bassins de démo, espace « longues cannes », une "nocturne festive", espace jeunes, influenceurs, moniteur-guides, nautisme… sur 3 jours d’expo ! 👏
       Parc Exponantes du 23 au 25 mai 2025 </p>
       <a href="https://www.gifap.fr/le-gifap-annonce-un-festival.../">Informations</a>`
-    }
+    },
+    {
+      id:'ag2025',
+      title:'Assemblée Générale le 2 Février 2025',
+      imageUrl:'/assets/images/ag2025.jpg',
+      content:
+      `
+      
+      `
+    },
   ];
 
   getArticleById(id: string) {
