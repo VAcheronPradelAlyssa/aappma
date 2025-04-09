@@ -143,6 +143,33 @@ Un grand merci à tous!</p>
       
       `
     },
+    {
+      id:'a-g2025',
+      title:'Assemblée Générale 2025',
+      imageUrl:"/assets/images/a-g2025.jpg",
+      content:`<p>Cette année, nous avons accueilli près de 50 adhérents venus malgré les intempéries, ainsi que la Fédération de Pêche du Morbihan, représentée par son Président, Pierrick Courjal.</p>
+      <p>Lors de cette assemblée, nous avons échangé autour des actions menées en 2024 :</p>
+      <ul>
+      <li>Les alevinages réalisés à l’étang du Rodoir (gardons et carpes) et à l’étang de Kernevy (gardons et black-bass).</li>
+      <li>Les divers entretiens effectués sur les sites et les postes de pêche.</li>
+      <li>Les manifestations organisées : enduro carpe, open carnassier et rencontres halieutiques.</li>
+      </ul>
+      <p>Nous sommes également revenus sur la réglementation 2024 concernant la double maille sur les étangs du Rodoir et de Kernevy afin de répondre aux questions.
+Par ailleurs, nous avons abordé la gestion du territoire de l’AAPPMA qui a été mise à jours.
+Le parcours international de pêche au coup de la Vilaine à Tranhaleux sur la commune de Rieux a été franchement labellisé parcours passion par la Fédération Nationale de la Pêche en France FNPF </p>
+      <p>Nous organiserons également la Fête de la Pêche le 8 juin 2025 au Show Burin à Kernevy, avec un stand pour présenter la pêche et l’association aux visiteurs.</p>
+      <p>Merci à tous pour ce moment de partage convivial, essentiel pour permettre à votre AAPPMA de poursuivre ses actions sereinement.</p>`
+    },
+    {
+      id:'open-carnassier2025',
+      title:'Open Carnassiers 2025 Rieux - Pont du Cran',
+      imageUrl:"/assets/images/carnassiers2025.jpg",
+      content:`<p>Quoi de prévu le samedi 14 Juin? 🤔</p>
+      <p>Rien? Et bien rejoignez nous pour notre open carnassiers vilaine à Rieux! 🎣</p>
+      <p>En bateau, float tube ou kayak entre le port de rieux et le pont de cran.</p>
+      <p>Limité à 30 équipes</p>
+      <p>Inscription : aappmabbv@gmail.com</p>`
+    }
   ];
 
   getArticleById(id: string) {

@@ -9,13 +9,33 @@ export class CardDataService {
 
   private cards = [
     {
+      id:'open-carnassiers2025',
+      title:'Open Carnassier 2025 Rieux - Pont du Cran',
+      description:'Quoi de prévu le samedi 14 Juin? ',
+      imageUrl:'assets/images/carnassiers2025.jpg',
+      link:'/article/open-carnassier2025',
+      date:'2025-06-14',
+      pages:['home','evenements','concours','actualites'],
+      category:'Concours'
+      },
+      {
+        id:'a-g2025',
+        title:'Ce dimanche 2 février s\'est déroulée notre assemblée générale.',
+        description:'Cette année, nous avons accueilli près de 50 adhérents venus malgré les intempéries, ainsi que la Fédération de Pêche du Morbihan, représentée par son Président, Pierrick Courjal.',
+        imageUrl:'assets/images/a-g2025.jpg',
+        link:'/article/a-g2025',
+        date:'2025-02-02',
+        pages:['home','evenements','actualites'],
+        category:'Info'
+        },
+    {
       id:'ag2025',
       title:'Assemblée Générale 2 Février 2025',
       description:'L\'Assemblée Générale a lieu le 2 février 2025 à 9h30 à Saint Dolay',
       imageUrl:'assets/images/ag2025coupe.jpg',
       link:'/article/ag2025',
       date:'2025-02-02',
-      pages:['actualites','evenements','home'],
+      pages:['actualites','evenements',],
       category:'Info'
       },
     {
@@ -54,7 +74,7 @@ export class CardDataService {
       description:'Clap de fin! elles nous auront boudées jusqu\'au bout!',
       imageUrl: '/assets/images/finalenduro2024.jpg',
       link: '/article/enduro-carpe-2024',
-      pages: ['actualites', 'home'],
+      pages: ['actualites'],
       date:'2024-09-13',
       category: 'Événements'
       
@@ -87,7 +107,9 @@ export class CardDataService {
     date:'2025-05-25',
     pages:['actualites','evenements'],
     category:'Animations'
-    }
+    },  
+   
+     
      
    
   ];

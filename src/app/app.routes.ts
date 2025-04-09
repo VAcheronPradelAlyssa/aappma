@@ -12,7 +12,7 @@ export const routes: Routes = [
   { path: 'actualites', component: ActualitesComponent },
   { path: 'article/:id', component: ArticleComponent }, // Vérifie cette route pour l'article
   { path : 'evenements', component : EvenementsComponent},
-  { path: 'mentions', component: MentionsLegalesComponent },
+  { path: 'mentions-legales', component: MentionsLegalesComponent },
   { path: 'membres-conseil', component: MembresConseilComponent },
   {path : 'gallery', component: GalleryComponent},
   { path: '**', redirectTo: '' }
