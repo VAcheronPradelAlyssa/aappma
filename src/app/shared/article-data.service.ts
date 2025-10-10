@@ -169,10 +169,65 @@ Le parcours international de pêche au coup de la Vilaine à Tranhaleux sur la c
       <p>En bateau, float tube ou kayak entre le port de rieux et le pont de cran.</p>
       <p>Limité à 30 équipes</p>
       <p>Inscription : aappmabbv@gmail.com</p>`
-    }
+    },
+    {
+      id:'enduro-carpe-2025-fin',
+      title:'Fin de l\'épreuve de l\'Enduro Carpe 2025',
+      imageUrl:"/assets/images/enduro2025/accueil.jpg",
+      content:`<p>🎣 Fin de l’Épreuve de l’Enduro Carpe de Rieux </p>
+      <p>L’édition 2025 de notre enduro carpe, qui s’est déroulée du vendredi 12 au dimanche 13 septembre, s’est achevée aujourd'hui à 11h, suivie de la remise des prix à 12h.</p>
+      <p>📊 Résultats :</p>
+      <p>22 poissons capturés par 16 équipes, dont 4 capot</p>
+      <p>Poids total des prises : 165,29 kg</p>
+      <p>💡 Comparatif avec 2024 :</p>
+      <p>L’an dernier, seulement 12 poissons avaient été sortis pour un peu plus de 70 kg, et 6 équipes sur 18 avaient enregistré des prises. Cette année marque donc une nette progression.</p>
+<p>🏆 Record battu :</p>
+<p>La plus grosse carpe jamais prise lors de notre enduro a affiché 16,210 kg sur la balance !</p>
+<p>🙏 Un grand merci à tous les participants, bénévoles et partenaires pour leur engagement et leur bonne humeur tout au long du week-end. Cette édition restera une référence pour notre association et pour tous les passionnés de carpe.</p>
+`,    
+      
+      facebookLink: 'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faappmabbv56%2Fposts%2Fpfbid0Cb4zvPbC4HuNbmALYgAYBczqHeKfJDz2vxnJAtjHYJBi6xRNjsnq5tr7BeRsvNVYl&show_text=true&width=500'
+
+      
+},
+    {
+      id:'grand-honneur-enduro-2025',
+      title:'🎣 Un grand honneur pour nous – Enduro Carpes 2025 🤝',
+      imageUrl:"/assets/images/enduro2025/cloé.jpg",
+      content:`
+      <a href="https://www.facebook.com/associationlabougeotte.rieuse?locale=fr_FR" target="_blank" rel="noopener noreferrer">Merci à Labougeotte Rieuse pour l'article</a>
+      <p>Le week-end dernier, lors de l’Enduro Carpes qui s’est déroulé du 12 au 14 septembre sur la Vilaine à Rieux, nous avons eu la satisfaction de remettre 1 000 € à l’association Chromosome du Bonheur, représentée par Cléo Renou . </p>
+      <p>Cléo est une nageuse de haut niveau, membre de l’équipe de France de natation en sport adapté. Elle s’entraîne avec passion et régularité depuis des années et a remporté de nombreuses médailles en championnats de France, d’Europe et du monde. Elle a récemment participé à une grande compétition internationale en Thaïlande, où elle a de nouveau brillé par ses performances et son esprit sportif.</p>
+      <p>Ce geste, bien au-delà d’un simple don, symbolise ce que nous voulons porter comme valeurs : solidarité, entraide, et soutien à celles et ceux qui œuvrent pour le bonheur et le bien-être de tous.</p>
+      <p>Un grand merci à Cléo pour son exemple et son énergie, à tous les bénévoles et participants de l’enduro carpe, ainsi qu’à Monsieur le Maire Thierry Poulain pour sa présence. 🙏</p>
+    
+`,    
+      
+      facebookLink: 'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fassociationlabougeotte.rieuse%2Fposts%2Fpfbid02i8FKWRDbxcufo95t3TkKoZ2GgoEjSC7jWw3dNbz7dS5s9uznxkfG6pao465jDNjWl&show_text=true&width=500'
+    },
+    {
+      id:'fin-open-carnassiers-2025',
+      title:'🎣 Fin de l’Open Carnassiers 2025 – Une journée mémorable sur la Basse Vilaine ! 🐟',
+      imageUrl:'assets/images/open2025/open2025.jpg',
+      content:`<p>Ce samedi 14 juin, 38 pêcheurs passionnés se sont affrontés lors de l’Open Carnassiers organisé. Entre soleil, stratégie et coups de ligne bien placés, la compétition a tenu toutes ses promesses !</p>
+      <p>📊 Résultats du podium :</p>
+      <p>🥇 1ère place : Franck Leporcher & Julien Bethamy — 326 points</p>
+      <p>🥈 2e place : Alex William & Jérémy Hervé — 198 points</p>
+      <p>🥉 3e place : Quentin Cadoret & Bastien Briand — 188 points</p>
+      <p>💥 Bilan des prises (total : 32 poissons) :</p>
+      <p>🐊 Brochets : 0 (ils nous ont boudés cette année !)</p>
+      <p>🐉 Sandres : 4 capturés — plus gros : 46 cm</p>
+      <p>🎯 Perches : 12 capturées — plus grosse : 25.5 cm</p>
+      <p>🎣 Black Bass : 10 capturés — plus gros : 32 cm</p>
+      <p>🐋 Silures : 6 capturés — plus gros : 204 cm (oui, plus de 2 mètres 😲 !)</p>
+      <p>👏 Un immense bravo à tous les participants pour leur sportivité et leur passion. Et un merci spécial aux bénévoles et partenaires qui ont rendu cet événement possible !</p>
+      `,
+      facebookLink: 'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faappmabbv56%2Fposts%2Fpfbid02svaQBsDfMazoqs5LCoPKtbGR8DhuDwjkyEGing7ypAHYsPdsamsPbJvMDddWyE4tl&show_text=true&width=500',
+    },
+    
   ];
 
   getArticleById(id: string) {
-    return this.articles.find(article => article.id === id); // Recherche l'article
+    return this.articles.find(article => article.id === id); 
   }
 }

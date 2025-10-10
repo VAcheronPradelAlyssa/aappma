@@ -15,8 +15,9 @@ export class CardDataService {
       imageUrl:'assets/images/carnassiers2025.jpg',
       link:'/article/open-carnassier2025',
       date:'2025-06-14',
-      pages:['home','evenements','concours','actualites'],
-      category:'Concours'
+      pages:['evenements','concours','actualites'],
+      category:'Concours',
+      order: 7
       },
       {
         id:'a-g2025',
@@ -26,7 +27,8 @@ export class CardDataService {
         link:'/article/a-g2025',
         date:'2025-02-02',
         pages:['home','evenements','actualites'],
-        category:'Info'
+        category:'Info',
+        order: 4
         },
     {
       id:'ag2025',
@@ -36,7 +38,8 @@ export class CardDataService {
       link:'/article/ag2025',
       date:'2025-02-02',
       pages:['actualites','evenements',],
-      category:'Info'
+      category:'Info',
+      order: 5
       },
     {
       id: 'parcours-passion-tranhaleux',
@@ -45,7 +48,8 @@ export class CardDataService {
       imageUrl: 'assets/images/parcourslabel.jpg',  // Modification du chemin de l'image
       link: '/article/parcours-passion-tranhaleux',
       pages: ['home', 'actualites'],
-      category: 'Info'
+      category: 'Info',
+      order: 3
     },
     {
       id: 'open-carnassiers',
@@ -55,7 +59,8 @@ export class CardDataService {
       link: '/article/open-carnassiers',
       pages: ['evenements', 'actualites'],
       date:'2024-06-29',
-      category: 'Événements'  // Ajout de la catégorie
+      category: 'Événements',  // Ajout de la catégorie
+      order: 6
     },
   
     {
@@ -65,7 +70,8 @@ export class CardDataService {
       imageUrl: '/assets/images/finalenduro2024.jpg',
       link: '/article/concours-belles-prises',
       pages: ['actualites'], // S'affiche sur Home et Actualités,
-      category: 'Concours'  // Ajout de la catégorie
+      category: 'Concours',  // Ajout de la catégorie
+      order: 7
 
     },
     {
@@ -76,7 +82,8 @@ export class CardDataService {
       link: '/article/enduro-carpe-2024',
       pages: ['actualites'],
       date:'2024-09-13',
-      category: 'Événements'
+      category: 'Événements',
+      order: 8
       
     },
     {
@@ -87,7 +94,8 @@ export class CardDataService {
       link:'/article/rhb-2024',
       pages: ['actualites','evenements'],
       date:'2024-10-05',
-      category: 'Événements'
+      category: 'Événements',
+      order: 9
     },
     {
       id:'ag-2024',
@@ -96,7 +104,8 @@ export class CardDataService {
       imageUrl:'assets/images/ag.jpg',
       link:'/article/ag-2024',
       pages: ['actualites'],
-      category:'Info'
+      category:'Info',
+      order: 10
     },
     {
     id:'festival-national',
@@ -106,26 +115,61 @@ export class CardDataService {
     link:'/article/festival-national',
     date:'2025-05-25',
     pages:['actualites','evenements'],
-    category:'Animations'
+    category:'Animations',
+    order: 11
     },  
-   
-     
-     
-   
+    {
+      id:'enduro-carpe-2025-fin',
+      title:'Fin de l\'épreuve de l\'Enduro Carpe 2025',
+      description:'L’édition 2025 de notre enduro carpe, qui s’est déroulée du vendredi 12 au dimanche 13 septembre, s’est achevée aujourd\'hui à 11h, suivie de la remise des prix à 12h.',
+      imageUrl:'assets/images/enduro2025/accueil.jpg',
+      link:'/article/enduro-carpe-2025-fin',
+          date:'2025-09-13',
+      pages: ['actualites', 'evenements'],
+      category:'Événements',
+      order: 1
+    },
+    {
+      id:'grand-honneur-enduro-2025',
+      title:'Grand Honneur Enduro 2025',
+      description:'🎣 Un grand honneur pour nous – Enduro Carpes 2025 🤝',
+      imageUrl:'assets/images/enduro2025/cloé.jpg',
+      link:'/article/grand-honneur-enduro-2025',
+      pages: ['actualites'],
+      category:'Info',
+      order: 2
+    },
+    {
+      id:'fin-open-carnassiers-2025',
+      title:'🎣 Fin de l’Open Carnassiers 2025 – Une journée mémorable sur la Basse Vilaine ! 🐟',
+      description:'Ce samedi 14 juin, 38 pêcheurs passionnés se sont affrontés lors de l’Open Carnassiers organisé. ',
+      imageUrl:'assets/images/open2025/open2025.jpg',
+      date:'2025-06-14',
+      link:'/article/fin-open-carnassiers-2025',
+      pages: ['actualites', 'evenements'],
+      category:'Événements',
+      order: 2
+    }
   ];
 
   // Retourne les cartes pour une page donnée
   getCardsForPage(page: string) {
-    return this.cards.filter(card => card.pages.includes(page));
+    return this.cards
+      .filter(card => card.pages.includes(page))
+      .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
   }
   getUpcomingEvents() {
     const currentDate = new Date();
-    return this.cards.filter(card => card.date && new Date(card.date) > currentDate);
+    return this.cards
+      .filter(card => card.date && new Date(card.date) > currentDate)
+      .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
   }
 
   getPastEvents() {
     const currentDate = new Date();
-    return this.cards.filter(card => card.date && new Date(card.date) <= currentDate);
+    return this.cards
+      .filter(card => card.date && new Date(card.date) <= currentDate)
+      .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
   }
 
   getCardsByCategory(category: string) {

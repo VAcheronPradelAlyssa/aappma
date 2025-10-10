@@ -4,7 +4,7 @@
 .img-fluid {
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* L'image couvrira toute la zone sans déformation */
+    object-fit: cover;  
   }
   img {
     max-width: 100%;
@@ -14,3 +14,21 @@
     border-color: #0daa76;
     color: #0daa76;
    }
+   
+  .img-fullwidth {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+  .home-img {
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+  }
