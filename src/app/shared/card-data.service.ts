@@ -135,7 +135,7 @@ export class CardDataService {
       description:'🎣 Un grand honneur pour nous – Enduro Carpes 2025 🤝',
       imageUrl:'assets/images/enduro2025/cloé.jpg',
       link:'/article/grand-honneur-enduro-2025',
-      pages: ['actualites'],
+      pages: ['actualites','home'],
       category:'Info',
       order: 2
     },
