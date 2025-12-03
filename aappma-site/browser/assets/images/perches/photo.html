@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Aappma Brochet de Basse Vilaine</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- Assurez-vous de mettre le bon chemin vers votre fichier CSS -->
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <img src="photos/logo.png" alt="Logo" class="logo-img">
+
+            <a class="navbar-brand" href="index.html">Accueil</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse" aria-expanded="false" aria-label="Toggle search">
+                Menu
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="photo.html">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evenements.html">Événements</a>
+                    </li>
+                    <a class="nav-link" href="actualites.html">Actualités</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://morbihan.federationpeche.fr/?fbclid=IwAR3Wnd7KtBzU04YHm4WPvRMNmL6N6LXNqfLJ23N3aZ0K8r5I6TthmqzNH5w">Fédération</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.cartedepeche.fr/">Carte de Pêche</a>
+                    </li>
+                    <li class="nav-item">
+                       <!-- <a class="nav-link" href="parcours.html">Parcours</a>-->
+                    </li>
+                    <li class="nav-item">                        
+                    <a class="nav-link" href="reglementation.html">Réglementations</a>
+                    </li>
+                    <li class="nav-item">                        
+                        <a class="nav-link" href="carte.html">Où Pêcher?</a>
+                    </li>
+                    <li class="nav-item">                        
+                        <a class="nav-link" href="cg.html">Membre du Conseil</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Barre de recherche sur les petits écrans -->
+    <div class="collapse navbar-collapse custom-navbar" id="searchCollapse">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="photo.html">Galerie</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="evenements.html">Événements</a>
+            </li>
+            <a class="nav-link" href="actualites.html">Actualités</a>
+            <!-- Ajoutez d'autres liens de navigation ici --></li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://morbihan.federationpeche.fr/?fbclid=IwAR3Wnd7KtBzU04YHm4WPvRMNmL6N6LXNqfLJ23N3aZ0K8r5I6TthmqzNH5w">Fédération</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.cartedepeche.fr/" >Carte de Pêche</a>
+            </li>
+            <li class="nav-item">
+               <!-- <a class="nav-link" href="parcours.html">Parcours</a>-->
+            </li>
+            <li class="nav-item">                        
+                <a class="nav-link" href="reglementation.html">Réglementations</a>
+                </li>
+                <li class="nav-item">                        
+                    <a class="nav-link" href="carte.html">Où Pêcher?</a>
+
+                </li>
+                <li class="nav-item">                        
+                    <a class="nav-link" href="cg.html">Membre du Conseil</a>
+                </li>    
+        </ul>
+    </div>
+
+    <h1>Vos Photos</h1>
+    <div class="image-container">
+        <img src="photos/paysage/galerie1.jpg" alt="Image pleine largeur">
+    </div>  
+    <div class="container mt-5 content">
+
+        <h3>N'hésitez pas à nous envoyer vos meilleurs photos ou prises avec description pour compléter l'album</h3>
+        <!-- Barre de recherche -->
+        <div class="mb-3">
+            <label for="fishSpecies">Sélectionnez une espèce : </label>
+            <select id="fishSpecies" class="form-control">
+                <option value="all">Toutes les espèces</option>
+                <option value="carpes">Carpes</option>
+                <option value="silures">Silures</option>
+                <option value="brochets">Brochets</option>
+                <option value="perches">Perches</option>
+                <option value="sandres">Sandres</option>
+            </select>
+        </div>
+
+        <!-- Section Carpes -->
+        <section class="fish-species" data-species="carpes">
+            <h2>Carpes</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/carpe.jpg" class="card-img-top limited-height" alt="Carpe ENDURO">
+                        <div class="card-body">
+                            <h5 class="card-title">Carpe de l'Enduro Septembre 2023</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Répétez ce bloc pour chaque photo de carpe -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/carpe2.jpg" class="card-img-top limited-height" alt="Carpe Enduro">
+                        <div class="card-body">
+                            <h5 class="card-title">Carpe de l'Enduro Septembre 2023</h5>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="photos/carpec.jpg" class="card-img-top limited-height" alt="Carpe">
+                           <!-- <div class="card-body">
+                                
+                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="photos/carpes/carpeendu8.jpg" class="card-img-top limited-height" alt="Carpe Enduro">
+                            <div class="card-body">
+                                <h5 class="card-title">Carpe de l'Enduro Septembre 2023</h5>
+                                <p class="card-text">1 ère carpe péché de l'enduro septembre 2023 4kg 130</p>
+                            </div>
+                        </div>
+                    </div><div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="photos/carpes/carpeendu.jpg" class="card-img-top limited-height" alt="Carpe Enduro">
+                            <div class="card-body">
+                                <h5 class="card-title">Carpe de l'Enduro Septembre 2023</h5>
+                                <p class="card-text">1 ère carpe péché de l'enduro septembre 2023 4kg 130</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="photos/carpes/antoine.jpg" class="card-img-top limited-height" alt="Carpe Rodoir">
+                            <div class="card-body">
+                                <h5 class="card-title">Carpe à l'Etang du Rodoir</h5>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    
+                <!-- ... Ajoutez plus de cartes pour les photos de carpes ... -->
+            </div>
+        </section>
+        <!-- Répétez ce bloc pour chaque espèce de poisson -->
+        <section class="fish-species" data-species="silures">
+            <h2>Silures</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/silures/silure.jpg" class="card-img-top limited-height" alt="Silure">
+                        
+                    </div>
+                </div>
+               
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="photos/silures/silure2.jpg" class="card-img-top limited-height" alt="Silure">
+                            
+                        </div>
+                    </div>
+                    </div>
+        </section>
+        
+        <!-- Section Brochets -->
+        <section class="fish-species" data-species="brochets">
+            <h2>Brochets</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/brochet/brochet.jpg" class="card-img-top limited-height" alt="Brochet">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Perches -->
+        <section class="fish-species" data-species="perches">
+            <h2>Perches</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/perche/perche.jpg" class="card-img-top limited-height" alt="Perche">
+                    </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="photos/perche/perche2.jpg" class="card-img-top limited-height" alt="Perche">
+                        </div>
+                    </div>
+            
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/perche/434899121_1136318587494195_227017573079234229_n.jpg" class="card-img-top limited-height" alt="Perche">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/perche/perche4.jpg" class="card-img-top limited-height" alt="Perche">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/perche/perche5.jpg" class="card-img-top limited-height" alt="Perche">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/perche/perche8.jpg" class="card-img-top limited-height" alt="Perche">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/perche/perche7.jpg" class="card-img-top limited-height" alt="Perche">
+                    </div>
+                </div>
+            </div>
+                
+        </section>
+        
+
+        <section class="fish-species" data-species="sandres">
+            <h2>Sandres</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/sandre/sandres.jpg" class="card-img-top limited-height" alt="Sandre">
+                        
+                    </div>
+                </div>   
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/sandre/sandre2.jpg" class="card-img-top limited-height" alt="Sandre">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/sandre/sandre3.jpg" class="card-img-top limited-height" alt="Sandre">
+                        
+    
+                </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/sandre/sandre4.jpg" class="card-img-top limited-height" alt="Sandre">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/sandre/sandre5.jpg" class="card-img-top limited-height" alt="Sandre">
+                        
+    
+                </div>
+
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/sandre/sandre6.jpg" class="card-img-top limited-height" alt="Sandre">
+                        
+
+                </div>
+                </div>  
+               
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/sandre/sandre8.jpg" class="card-img-top limited-height" alt="Sandre">
+                </div>
+                </div>  
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/sandre/sandre9.jpg" class="card-img-top limited-height" alt="Sandre">
+                        </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/sandre/sandre10.jpg" class="card-img-top limited-height" alt="Sandre">
+                        </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/sandre/sandre11.jpg" class="card-img-top limited-height" alt="Sandre">
+                        </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/sandre/sandre12.jpg" class="card-img-top limited-height" alt="Sandre">
+                        </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/sandre/sandre13.jpg" class="card-img-top limited-height" alt="Sandre">
+                        </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/sandre/sandre14.jpg" class="card-img-top limited-height" alt="Sandre">
+                        </div>
+                </div>
+                
+        </section>
+        <section class="fish-species" data-species="mulet">
+            <h2>Mulets</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/mulet/mulet.jpg" class="card-img-top limited-height" alt="Mulet">
+                        
+                    </div>
+                </div>     
+        </section>
+        <section class="fish-species" data-species="Vos Moments">
+            <h2>Vos Moments</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/moment/moment.jpg" class="card-img-top limited-height" alt="Moment">
+                        
+                    </div>
+                </div>     
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/moment/moment2.jpg" class="card-img-top limited-height" alt="Moment">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/moment/moment3.jpg" class="card-img-top limited-height" alt="Moment">
+                </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/moment/moment4.jpg" class="card-img-top limited-height" alt="Moment">
+                        </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/moment/moment5.jpg" class="card-img-top limited-height" alt="Moment">
+                        </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/moment/moment6.jpg" class="card-img-top limited-height" alt="Moment">
+                        </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/moment/moment7.jpg" class="card-img-top limited-height" alt="Moment">
+                        </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/moment/moment8.jpg" class="card-img-top limited-height" alt="Moment">
+                        </div>
+                </div>
+
+        </section>
+        <section class="fish-species" data-species="canards">
+            <h2>Canards</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photos/canard.jpg" class="card-img-top limited-height" alt="Silure">
+                        
+                    </div>
+                </div>     
+        </section>
+    </div>
+
+    <!-- Modal pour afficher les images en grand -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Image en grand</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <footer>
+        <p>&copy; 2024 Aappma Brochet de Basse Vilaine</p>
+        <div>
+        <a href="mailto:aappmabbv@gmail.com" class="btn btn-primary">Nous Contacter</a>
+        <a href="https://www.facebook.com/aappmabbv56" target="_blank" class="btn btn-primary">Visitez-nous sur Facebook</a> 
+        </div>
+        <a href="mentions.html">Mentions Légales</a>
+    </footer>
+    <!-- Pied de page et scripts Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Script personnalisé pour la gestion de la galerie -->
+    <script>
+        // Attend que le document soit prêt
+        $(document).ready(function () {
+            // Écoute les changements dans la barre de sélection
+            $('#fishSpecies').change(function () {
+                // Récupère la valeur sélectionnée
+                var selectedSpecies = $(this).val();
+    
+                // Masque toutes les sections de poissons
+                $('.fish-species').hide();
+    
+                // Affiche uniquement la section de l'espèce sélectionnée
+                if (selectedSpecies !== 'all') {
+                    $('.fish-species[data-species="' + selectedSpecies + '"]').show();
+                } else {
+                    // Si "Toutes les espèces" est sélectionné, affiche toutes les sections
+                    $('.fish-species').show();
+                }
+            });
+    
+            // Gestion de la barre de recherche
+            $('#searchBar').on('input', function () {
+                var searchTerm = $(this).val().toLowerCase();
+    
+                // Masque toutes les photos
+                $('.fish-species .card').hide();
+    
+                // Affiche les photos correspondant au terme de recherche
+                $('.fish-species .card').filter(function () {
+                    return $(this).find('img').attr('alt').toLowerCase().includes(searchTerm);
+                }).show();
+            });
+    
+            // Gestion de l'affichage en grand des photos
+            $('.fish-species .card img').click(function () {
+                var imageSrc = $(this).attr('src');
+                var imageAlt = $(this).attr('alt');
+    
+                $('#imageModal').find('.modal-body img').attr('src', imageSrc);
+                $('#imageModal').find('.modal-title').text(imageAlt);
+                $('#imageModal').modal('show');
+            });
+        });
+    </script>
+</body>
+</html>
