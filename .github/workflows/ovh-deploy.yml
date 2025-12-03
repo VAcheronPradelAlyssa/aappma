@@ -1,0 +1,55 @@
+name: Build and push dist to ovh-deploy branch
+
+on:
+  push:
+    branches: [ "master" ]  # change "main" en "master" si nécessaire
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: "18"
+
+    - name: Install & build
+      run: |
+        npm ci
+        npm run build
+      env:
+        CI: true
+
+    - name: Push dist to ovh-deploy branch
+      env:
+        DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+      run: |
+        set -e
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+        rm -rf /tmp/ovh-deploy || true
+        mkdir -p /tmp/ovh-deploy
+        cd /tmp/ovh-deploy
+        git init
+        git remote add origin "https://x-access-token:${DEPLOY_TOKEN}@github.com/${{ github.repository }}.git"
+
+        if git ls-remote --exit-code --heads origin ovh-deploy; then
+          git fetch origin ovh-deploy
+          git checkout -B ovh-deploy origin/ovh-deploy
+        else
+          git checkout --orphan ovh-deploy
+        fi
+
+        git rm -rf . || true
+        cp -R $GITHUB_WORKSPACE/dist/* .
+        cp -R $GITHUB_WORKSPACE/dist/.* . 2>/dev/null || true
+
+        git add -A
+        git commit -m "Deploy dist from ${GITHUB_SHA}" || echo "No changes to commit"
+        git push --force origin ovh-deploy
