@@ -29,6 +29,27 @@
     height: auto;
     display: block;
     object-fit: cover;
+    object-position: center center;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
+    /* Limit the visible height on large screens so the image doesn't take too much vertical space */
+    max-height: 55vh;
+    transition: object-position 220ms ease, max-height 220ms ease;
+  }
+
+  /* Reduce further for very large screens */
+  @media (min-width: 1200px) {
+    .home-img {
+      /* give a bit more vertical space on large desktop */
+      max-height: 50vh;
+      object-position: center 28%;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .home-img {
+      /* slightly larger on very large screens so both brochet and name are visible */
+      max-height: 42vh;
+      object-position: center 30%;
+    }
   }
