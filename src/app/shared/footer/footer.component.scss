@@ -7,3 +7,20 @@
     text-decoration: none;  /* Pour enlever la ligne sous le lien (si nécessaire) */
   }
   
+/* Footer action layout */
+.site-footer .footer-actions {
+    display: flex;
+    gap: 16px; /* espace entre les éléments */
+    align-items: center;
+    justify-content: center; /* centre les boutons horizontalement */
+    flex-wrap: wrap;
+}
+
+.site-footer .footer-actions .btn-primary {
+    padding: 0.4rem 0.8rem;
+}
+
+.site-footer .footer-actions .nav-link {
+    margin-left: 8px; /* espace entre les boutons et le lien 'Mentions Légales' */
+    color: inherit;
+}
