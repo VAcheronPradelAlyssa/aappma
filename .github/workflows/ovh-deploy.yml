@@ -1,4 +1,4 @@
-name: Build and push dist to ovh-deploy branch
+name: Build and push dist/aappma-site/browser to ovh-deploy
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -16,7 +17,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: "20.19.0"  # <-- mis à jour pour satisfaire Angular
+        node-version: "20.19.0"  # adapte si besoin (>=20.19 requis par Angular)
 
     - name: Install & build
       run: |
@@ -25,20 +26,24 @@ jobs:
       env:
         CI: true
 
-    - name: Push dist to ovh-deploy branch
+    - name: Push dist/aappma-site/browser to ovh-deploy branch
       env:
         DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
       run: |
         set -e
+        # config git user
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
+        # prepare temporary repo for the deploy branch
         rm -rf /tmp/ovh-deploy || true
         mkdir -p /tmp/ovh-deploy
         cd /tmp/ovh-deploy
         git init
+        # authenticate with PAT to allow push
         git remote add origin "https://x-access-token:${DEPLOY_TOKEN}@github.com/${{ github.repository }}.git"
 
+        # fetch/create ovh-deploy branch
         if git ls-remote --exit-code --heads origin ovh-deploy; then
           git fetch origin ovh-deploy
           git checkout -B ovh-deploy origin/ovh-deploy
@@ -46,10 +51,23 @@ jobs:
           git checkout --orphan ovh-deploy
         fi
 
+        # remove previous files in the branch
         git rm -rf . || true
-        cp -R $GITHUB_WORKSPACE/dist/* .
-        cp -R $GITHUB_WORKSPACE/dist/.* . 2>/dev/null || true
 
+        # copy only the folder you asked: dist/aappma-site/browser
+        SRC="$GITHUB_WORKSPACE/dist/aappma-site/browser"
+        if [ -d "$SRC" ]; then
+          # copy contents, including hidden files if any
+          shopt -s dotglob || true
+          cp -a "$SRC"/. .
+        else
+          echo "Directory $SRC does not exist — aborting with no changes"
+        fi
+
+        # show what will be pushed (for debug)
+        ls -la
+
+        # commit and push (ignore if no changes)
         git add -A
-        git commit -m "Deploy dist from ${GITHUB_SHA}" || echo "No changes to commit"
+        git commit -m "Deploy dist/aappma-site/browser from ${GITHUB_SHA}" || echo "No changes to commit"
         git push --force origin ovh-deploy
