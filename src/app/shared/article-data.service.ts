@@ -7,6 +7,23 @@ export class ArticleDataService {
   constructor() {}
 
   private articles = [
+      {
+        id: 'ag-2026',
+        title: "Assemblée Générale 2026 : Préparez-vous !",
+        imageUrl: '/assets/images/a-g2025.jpg',
+        content: `
+          <p>L'Assemblée Générale 2026 de l'AAPPMA Brochet de Basse Vilaine se tiendra le <strong>dimanche 22 février 2026</strong>.</p>
+          <p>Les horaires exacts seront confirmés très prochainement. Nous vous invitons à réserver cette date dès maintenant !</p>
+          <p>Comme chaque année, ce sera l'occasion de faire le point sur la saison écoulée, d'échanger sur les projets à venir et de partager un moment convivial entre adhérents, bénévoles et partenaires.</p>
+          <ul>
+            <li>Bilan des actions 2025</li>
+            <li>Présentation des projets 2026</li>
+            <li>Questions/réponses avec le conseil d'administration</li>
+            <li>Moment de convivialité à l'issue de l'AG</li>
+          </ul>
+          <p>Nous comptons sur votre présence nombreuse !</p>
+        `
+      },
     {
       id: 'parcours-passion-tranhaleux',
       title: 'Parcours de pêche label passion - La Vilaine à Tranhaleux',

@@ -19,17 +19,28 @@ export class CardDataService {
       category:'Concours',
       order: 7
       },
+    {
+      id: 'ag-2026',
+      title: 'Assemblée Générale 2026',
+      description: "L'Assemblée Générale aura lieu le 22 février 2026. Les horaires seront confirmés très bientôt.",
+      imageUrl: 'assets/images/a-g2025.jpg',
+      link: '/article/ag-2026',
+      date: '2026-02-22',
+      pages: ['home', 'evenements', 'actualites'],
+      category: 'Info',
+      order: 1
+    },
       {
-        id:'a-g2025',
-        title:'Ce dimanche 2 février s\'est déroulée notre assemblée générale.',
-        description:'Cette année, nous avons accueilli près de 50 adhérents venus malgré les intempéries, ainsi que la Fédération de Pêche du Morbihan, représentée par son Président, Pierrick Courjal.',
-        imageUrl:'assets/images/a-g2025.jpg',
-        link:'/article/a-g2025',
-        date:'2025-02-02',
-        pages:['home','evenements','actualites'],
-        category:'Info',
-        order: 4
-        },
+          id:'a-g2025',
+          title:'Ce dimanche 2 février s\'est déroulée notre assemblée générale.',
+          description:'Cette année, nous avons accueilli près de 50 adhérents venus malgré les intempéries, ainsi que la Fédération de Pêche du Morbihan, représentée par son Président, Pierrick Courjal.',
+          imageUrl:'assets/images/a-g2025.jpg',
+          link:'/article/a-g2025',
+          date:'2025-02-02',
+          pages:['evenements','actualites'],
+          category:'Info',
+          order: 4
+          },
     {
       id:'ag2025',
       title:'Assemblée Générale 2 Février 2025',
