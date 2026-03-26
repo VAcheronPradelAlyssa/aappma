@@ -19,6 +19,30 @@ export class CardDataService {
       category:'Concours',
       order: 7
       },
+    // --- Ajout Open Carnassier 2026 ---
+    {
+      id: 'open-carnassier-2026',
+      title: 'Open Carnassier 2026 Rieux - Pont du Cran',
+      description: 'Participez à l’Open Carnassier 2026 le samedi 6 juin à Rieux ! Bateau, float tube ou kayak, vivez une journée conviviale et sportive sur la Vilaine. Infos et inscriptions à venir.',
+      imageUrl: 'assets/images/open2025/open2025.jpg',
+      link: '/article/open-carnassier-2026',
+      date: '2026-06-06',
+      pages: ['evenements', 'actualites', 'concours'],
+      category: 'Concours',
+      order: 12
+    },
+    // --- Ajout Enduro Carpe 2026 ---
+    {
+      id: 'enduro-carpe-2026',
+      title: 'Enduro Carpe 2026',
+      description: 'L’Enduro Carpe revient du 18 au 20 septembre 2026 ! Trois jours de passion, de convivialité et de compétition sur la Vilaine à Rieux. Réservez vos dates, toutes les infos bientôt.',
+      imageUrl: 'assets/images/enduro2025/accueil.jpg',
+      link: '/article/enduro-carpe-2026',
+      date: '2026-09-18',
+      pages: ['evenements', 'actualites', 'concours'],
+      category: 'Événements',
+      order: 13
+    },
     {
       id: 'ag-2026',
       title: 'Assemblée Générale 2026',

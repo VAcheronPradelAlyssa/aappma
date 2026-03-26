@@ -187,6 +187,83 @@ Le parcours international de pêche au coup de la Vilaine à Tranhaleux sur la c
       <p>Limité à 30 équipes</p>
       <p>Inscription : aappmabbv@gmail.com</p>`
     },
+    // --- Article Open Carnassier 2026 ---
+    {
+      id: 'open-carnassier-2026',
+      title: 'Open Carnassier 2026 Rieux - Pont du Cran',
+      imageUrl: '/assets/images/open2025/open2025.jpg',
+      content: `
+        <h2>Règlement Open Carnassier 2026</h2>
+        <p><strong>Date :</strong> Samedi 6 juin 2026</p>
+        <p><strong>Lieu :</strong> Vilaine, entre le port de Rieux et le pont du Cran</p>
+        <h3>ARTICLE 1. - MODALITÉS DU CONCOURS</h3>
+        <ul>
+          <li>Concours au lancer ou au fouet avec leurres artificiels, poisson mort manié ou tirette.</li>
+          <li>En équipe de deux, en bateau, float tube ou kayak (proximité immédiate obligatoire pour float/kayak).</li>
+          <li>Quatre bateaux minimum pour la sécurité et la comptabilisation des prises.</li>
+          <li>Inscription : 40€ par équipe, intégralement reversée dans la dotation.</li>
+          <li>Port du gilet de sauvetage homologué obligatoire.</li>
+        </ul>
+        <h3>ARTICLE 2. – DÉROULEMENT</h3>
+        <ul>
+          <li>6h30 : Briefing et mise en place au niveau amont du parcours de Tranhaleux</li>
+          <li>7h00 à 12h30 : Pêche (une seule manche)</li>
+          <li>12h30 : Fin de l’épreuve</li>
+          <li>13h00 : Remise des prix, verre de l’amitié</li>
+        </ul>
+        <p>Les black-bass ne sont pas comptabilisés (période d’ouverture non atteinte).</p>
+        <h3>ARTICLE 3. - CONCURRENTS</h3>
+        <ul>
+          <li>Carte de pêche en cours de validité obligatoire.</li>
+          <li>Limite de 30 équipes (15 minimum pour maintenir le concours).</li>
+        </ul>
+        <h3>ARTICLE 4. - EMBARCATIONS</h3>
+        <ul>
+          <li>Float tube, kayak, embarcations à rame, moteur électrique ou thermique (max 5 nœuds).</li>
+          <li>Pêche uniquement depuis l’embarcation, traîne interdite.</li>
+          <li>Respect des distances et sécurité entre concurrents.</li>
+        </ul>
+        <h3>ARTICLE 5. - ÉQUIPEMENTS ET LEURRES</h3>
+        <ul>
+          <li>Pêche exclusivement au lancer (toutes variantes autorisées).</li>
+          <li>Matériel libre mais conforme à la législation et à l’éthique sportive.</li>
+          <li>Une seule canne en action de pêche par pêcheur (cannes de réserve hors de l’eau autorisées).</li>
+          <li>Épuisette autorisée.</li>
+        </ul>
+        <p>Pour toute question ou inscription : <a href="mailto:aappmabbv@gmail.com">aappmabbv@gmail.com</a></p>
+        <p>Venez relever le défi et partager un moment de passion !</p>
+      `
+    },
+    // --- Article Enduro Carpe 2026 ---
+    {
+      id: 'enduro-carpe-2026',
+      title: 'Enduro Carpe 2026',
+      imageUrl: '/assets/images/enduro2025/accueil.jpg',
+      content: `
+        <h2>Déroulement de l’Enduro Carpe 2026</h2>
+        <ul>
+          <li><strong>Vendredi 18 septembre</strong></li>
+          <ul>
+            <li>8h : Accueil des participants au PC par l’accès 1 (voir plan ci-dessous)</li>
+            <li>8h45 : Tirage au sort des postes</li>
+            <li>9h15 : Départ sur les postes puis installation</li>
+            <li>10h : Début de l'amorçage et de la pêche</li>
+          </ul>
+          <li><strong>Samedi 19 septembre</strong></li>
+          <ul>
+            <li>Passage pour les pesées et éventuelles photos des carpes capturées lors de la nuit</li>
+          </ul>
+          <li><strong>Dimanche 20 septembre</strong></li>
+          <ul>
+            <li>À partir de 8h30 : Passage pour les pesées et éventuelles photos des carpes capturées au cours de la nuit</li>
+            <li>11h00 : Fin de l'épreuve</li>
+            <li>12h00 : Proclamation des résultats et remise des lots au PC</li>
+            <li>13h00 : Apéritif de clôture offert</li>
+          </ul>
+        </ul>
+        <p>Le déroulement reste identique à l’édition précédente, dans une ambiance conviviale et sportive. Pour toute question ou inscription : <a href="mailto:aappmabbv@gmail.com">aappmabbv@gmail.com</a></p>
+      `
+    },
     {
       id:'enduro-carpe-2025-fin',
       title:'Fin de l\'épreuve de l\'Enduro Carpe 2025',
